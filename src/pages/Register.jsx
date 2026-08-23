@@ -30,7 +30,7 @@ export default function Register() {
   return (
     <main className="auth-page">
       <form className="form-card" onSubmit={submit}>
-        <span className="pill">Join JobFlow</span>
+        <span className="pill">Join NexoraHire</span>
         <h1>Create your account</h1>
         {error && <div className="alert error">{error}</div>}
         <label>
