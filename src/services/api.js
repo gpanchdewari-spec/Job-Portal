@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL:"https://backend-job-portal-1-apus.onrender.com/api",
 });
 
 /// https://backend-job-portal-4u89.onrender.com/
