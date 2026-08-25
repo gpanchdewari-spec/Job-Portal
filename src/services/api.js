@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://backend-job-portal-4u89.onrender.com/api",
+  baseURL:"https://backend-job-portal-4u89.onrender.com/api",
 });
 
 /// https://backend-job-portal-4u89.onrender.com/
