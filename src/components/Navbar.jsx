@@ -5,7 +5,12 @@ import React from "react";
 
 export default function Navbar() {
   const { user, logout } = useAuth();
-  const dashboard = user?.role === "recruiter" ? "/recruiter" : "/candidate";
+const dashboard =
+  user?.role === "admin"
+    ? "/admin"
+    : user?.role === "recruiter"
+      ? "/recruiter"
+      : "/candidate";
 
   return (
     <header className="navbar">

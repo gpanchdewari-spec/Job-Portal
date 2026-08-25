@@ -11,6 +11,7 @@ import CandidateDashboard from "./pages/CandidateDashboard";
 import RecruiterDashboard from "./pages/RecruiterDashboard";
 import Applicants from "./pages/Applicants";
 import Footer from "./components/Footer";
+import AdminDashboard from "./pages/AdminDashboard";
 
 export default function App() {
   return (
@@ -53,6 +54,14 @@ export default function App() {
               <h1>404</h1>
               <p>Page not found.</p>
             </main>
+          }
+        />
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute role="admin">
+              <AdminDashboard />
+            </ProtectedRoute>
           }
         />
       </Routes>
